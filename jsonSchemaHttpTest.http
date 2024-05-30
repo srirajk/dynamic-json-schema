@@ -1,0 +1,15 @@
+### Post Valid JSON data to validate against a schema
+POST http://localhost:8080/json/validate?schemaId=TransactionCase
+Content-Type: application/json
+
+{
+  "type": "transaction",
+  "identifier": "some_identifier",
+  "transactionId": "1234567890",
+  "transactionDate": "2022-10-01",
+  "transactionDescription": "Payment for services",
+  "metadata": {
+    "location": "New York",
+    "device": "Mobile"
+  }
+}

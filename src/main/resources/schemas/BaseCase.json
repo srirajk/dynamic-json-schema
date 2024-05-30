@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BaseCase",
+  "type": "object",
+  "required": [
+    "type",
+    "identifier"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": [
+        "customer",
+        "transaction"
+      ]
+    },
+    "identifier": {
+      "type": "string"
+    }
+  }
+}

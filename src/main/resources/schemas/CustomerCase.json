@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CustomerCase",
+  "type": "object",
+  "required": [
+    "customerName",
+    "customerId"
+  ],
+  "properties": {
+    "customerName": {
+      "type": "string"
+    },
+    "customerId": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "classpath:schemas/BaseCase.json"
+    }
+  ]
+}

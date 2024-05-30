@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TransactionCase",
+  "type": "object",
+  "required": [
+    "transactionId",
+    "transactionDate",
+    "transactionDescription"
+  ],
+  "properties": {
+    "transactionId": {
+      "type": "string"
+    },
+    "transactionDate": {
+      "type": "string",
+      "format": "date"
+    },
+    "transactionDescription": {
+      "type": "string",
+      "metadata": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "classpath:schemas/BaseCase.json"
+    }
+  ]
+}
